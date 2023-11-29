@@ -31,3 +31,25 @@ body {
     background-image: url(/images/banner.jpg);
     background-size: cover;
 }
+
+/* ---------- body element's */
+.container {
+    height: 100vh;
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: clamp(428px, 990px, 990px);
+    height: 670px;
+    background-color: var(--primary-bg);
+    border-radius: 40px;
+    border: 2px solid var(--accent-bg);
+
+    display: grid;
+    grid-template-rows: 220px auto;
+    overflow: auto;
+}
